@@ -19,6 +19,8 @@ jobs:
         shell: python
   run-windows-command:
     runs-on: windows-latest
+    # only run after specified jobs are finished, run in series, NOT in parallel
+    needs: ['run-shell-command']
     steps:
       # Powershell is windows default
       - name: Directory Powershell
