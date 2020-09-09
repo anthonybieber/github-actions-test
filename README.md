@@ -1,3 +1,3 @@
 # github-actions-test
 
-Working example of using github actions
+Working example of using github actions!
