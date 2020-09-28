@@ -1,13 +1,18 @@
 name: Actions Workflow
 
 on:
+  push:
+    branches:
+      - master
+      # match anything that matches feature/*,
+      - 'feature/*'
 #  push:
-  schedule:
-    # Run every 5 minutes, and every 7 minutes
-    - cron: "0/5 * * * *"
-    - cron: "0/7 * * * *"
-  pull_request:
-    types: [closed, assigned, opened, reopened]
+#  schedule:
+#    # Run every 5 minutes, and every 7 minutes. I
+#    - cron: "0/5 * * * *"
+#    - cron: "0/7 * * * *"
+#  pull_request:
+#    types: [closed, assigned, opened, reopened]
 
 jobs:
   run-github-actions:
