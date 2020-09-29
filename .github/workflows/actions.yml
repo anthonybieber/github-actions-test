@@ -3,7 +3,7 @@ name: Actions Workflow
 on:
   push:
     branches:
-      - master
+      - nothing
       # match anything that matches feature/*,
       - 'feature/*'
 #  push:
