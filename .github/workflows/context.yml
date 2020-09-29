@@ -1,6 +1,15 @@
 on: push
 
 jobs:
+  functions:
+    run-on: ubuntu-16.04
+    steps:
+      - name: dump
+        run: |
+          echo ${{ contains('hello', 'll') }}
+          echo ${{ stratsWith('hello', 'he') }}
+          echo ${{ endsWith('hello, 'lo' }}
+          echo ${{ format('Hello {0} {1} {2}, 'You', 'Fucking', 'Asshole') }}
   one:
     runs-on: ubuntu-16.04
     steps:
