@@ -10,4 +10,4 @@ jobs:
         with:
           node-version: 6
       - name: Log node version after version change
-          run: node -v
+        run: node -v
