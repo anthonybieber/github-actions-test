@@ -12,6 +12,8 @@ jobs:
           echo ${{ format('Hello {0} {1} {2}', 'You', 'Fucking', 'Asshole') }}
   one:
     runs-on: ubuntu-16.04
+    # Condition stating only to run on push
+    if: github.event_name == 'push'
     steps:
       - name: Dump GitHub context
         env:
