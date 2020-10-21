@@ -29,8 +29,8 @@ jobs:
         uses: docker://technosophos/slack-notify
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: "Hello from github actions!"
-          SLACK_COLOR: "#efefef"
+          SLACK_MESSAGE: "You are the worst"
+          SLACK_COLOR: "#FF6347"
           SLACK_USERNAME: "ANTHONY"
           SLACK_ICON: "https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201019175506-donald-trump-october-18-2020-01.jpg"
   node-docker:
