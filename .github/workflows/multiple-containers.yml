@@ -30,6 +30,7 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_MESSAGE: "Hello from github actions!"
+          SLACK_COLOR: "#efefef"
   node-docker:
     runs-on: ubuntu-latest
     services:
