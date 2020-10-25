@@ -13,7 +13,6 @@ jobs:
         run: echo "Hello World"
         continue-on-error: true
       - name: multiline script
-        if: failure()
         run: |
           pwd
           node -v
