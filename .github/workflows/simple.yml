@@ -15,6 +15,7 @@ jobs:
       - name: multiline script
         if: failure()
         run: |
+          pwd
           node -v
           npm -v
           printenv
