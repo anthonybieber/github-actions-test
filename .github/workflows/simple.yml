@@ -1,6 +1,8 @@
 name: Shell Commands
 
-on: [pull_request]
+on:
+  push:
+    branches: [develop]
 
 jobs:
   run-shell-command:
@@ -12,6 +14,7 @@ jobs:
         run: |
           node -v
           npm -v
+          printenv
       - name: python command
         run: |
           import platform
